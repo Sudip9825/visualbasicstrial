@@ -22,9 +22,37 @@ Partial Class Form3
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Form3"
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        SuspendLayout()
+        ' 
+        ' Guna2Button1
+        ' 
+        Guna2Button1.CustomizableEdges = CustomizableEdges1
+        Guna2Button1.DisabledState.BorderColor = Color.DarkGray
+        Guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray
+        Guna2Button1.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        Guna2Button1.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        Guna2Button1.Font = New Font("Segoe UI", 9F)
+        Guna2Button1.ForeColor = Color.White
+        Guna2Button1.Location = New Point(219, 108)
+        Guna2Button1.Name = "Guna2Button1"
+        Guna2Button1.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        Guna2Button1.Size = New Size(225, 56)
+        Guna2Button1.TabIndex = 0
+        Guna2Button1.Text = "Guna2Button1"
+        ' 
+        ' Form3
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(800, 450)
+        Controls.Add(Guna2Button1)
+        Name = "Form3"
+        Text = "Form3"
+        ResumeLayout(False)
     End Sub
+
+    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
 End Class
